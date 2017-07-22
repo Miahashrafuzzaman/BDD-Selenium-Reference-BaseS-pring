@@ -26,21 +26,24 @@ public class HomePageSteps extends  StepBase{
         //String text = driver.getTitle();
         //Thread.sleep(3000);
 
-        WebElement element  = driver.findElement(By.xpath("(//title)[2]"));
-        String text = element.getAttribute("text");
-        Assert.assertEquals("Broadleaf Demo - Heat Clinic",text);
+        //WebElement element  = driver.findElement(By.xpath("(//title)[2]"));
+        //String text = element.getAttribute("text");
+       // Assert.assertEquals("Broadleaf Demo - Heat Clinic",text);
+        homePage.verifyHomePageDisplay();
     }
 
     @When("^User click login button$")
     public void user_click_login_button() throws Throwable {
-        WebElement element = driver.findElement(By.linkText("Login"));
-        element.click();
+       // WebElement element = driver.findElement(By.linkText("Login"));
+       // element.click();
+        homePage.goToLoginPage();
     }
 
     @Then("^Welcome message shows \"([^\"]*)\"$")
     public void welcome_message_shows(String arg1) throws Throwable {
-        WebElement element = driver.findElement(By.cssSelector(".my-account"));
-        String text = element.getText();
-        Assert.assertEquals(arg1,text);
+        //WebElement element = driver.findElement(By.cssSelector(".my-account"));
+       // String text = element.getText();
+       // Assert.assertEquals(arg1,text);
+        homePage.verifyAccountName(arg1);
     }
 }

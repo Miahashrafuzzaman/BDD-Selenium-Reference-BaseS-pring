@@ -12,34 +12,40 @@ import org.openqa.selenium.WebElement;
 public class LoginPageSteps extends  StepBase {
     @When("^Enter \"([^\"]*)\" as email address$")
     public void enter_as_email_address(String arg1) throws Throwable {
-        WebElement element = driver.findElement(By.name("j_username"));
-        element.sendKeys(arg1);
+        //WebElement element = driver.findElement(By.name("j_username"));
+        //element.sendKeys(arg1);
+        loginPage.enterEmailAddress(arg1);
     }
 
     @When("^Enter \"([^\"]*)\" as password$")
     public void enter_as_password(String arg1) throws Throwable {
-        WebElement element = driver.findElement(By.name("j_password"));
-        element.sendKeys(arg1);
+       // WebElement element = driver.findElement(By.name("j_password"));
+       // element.sendKeys(arg1);
+        loginPage.enterPassword(arg1);
     }
 
     @When("^Click login$")
     public void clickLogin() throws Throwable {
-        WebElement element = driver.findElement(By.cssSelector(".login_button.big.red"));
-        element.click();
+        //WebElement element = driver.findElement(By.cssSelector(".login_button.big.red"));
+        //element.click();
+        loginPage.clickLogin();
     }
 
     @Then("^Error Message should display$")
     public void verifyInvalidLoginMessage(){
-        WebElement element = driver.findElement(By.cssSelector(".error>p"));
-        String text  = element.getText();
-        Assert.assertEquals("The e-mail address and/or password entered do not match our records. Please try again",text);
+       // WebElement element = driver.findElement(By.cssSelector(".error>p"));
+        //String text  = element.getText();
+       // Assert.assertEquals("The e-mail address and/or password entered do not match our records. Please try again",text);
+
+        loginPage.verifyErrorMessage();
     }
 
     @When("Login with user \"([^\"]*)\" and password \"([^\"]*)\"")
     public void login(String user, String password) throws Throwable {
-        enter_as_email_address(user);
-        enter_as_password(password);
-        clickLogin();
+        //enter_as_email_address(user);
+        //enter_as_password(password);
+        //clickLogin();
+        loginPage.login(user,password);
     }
 
 }
