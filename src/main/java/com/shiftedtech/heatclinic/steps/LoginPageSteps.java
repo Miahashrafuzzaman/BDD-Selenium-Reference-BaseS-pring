@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 /**
- * Created by ShiftTeacher on 7/22/2017.
+ * Created by Miah Ashrafuzzaman on 7/22/2017.
  */
 public class LoginPageSteps extends  StepBase {
     @When("^Enter \"([^\"]*)\" as email address$")
@@ -45,7 +45,7 @@ public class LoginPageSteps extends  StepBase {
         //enter_as_email_address(user);
         //enter_as_password(password);
         //clickLogin();
-        loginPage.login(user,password);
+       //loginPage.login(user,password);
     }
 
 }

@@ -6,7 +6,7 @@ import cucumber.api.java.Before;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ShiftTeacher on 7/22/2017.
+ * Created by Miah Ashrafuzzaman on 7/22/2017.
  */
 public class BeforeAfterHook extends  StepBase{
     @Before

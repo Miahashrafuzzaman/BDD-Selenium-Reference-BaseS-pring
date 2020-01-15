@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BDDSeleniumReferenceBaseSpring" />
+        <module name="BDDSeleniumReferenceBase.Spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BDDSeleniumReferenceBaseSpring" target="1.8" />
+      <module name="BDDSeleniumReferenceBase.Spring" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by ShiftTeacher on 7/22/2017.
+ * Created by Miah Ashrafuzzaman on 7/22/2017.
  */
 
 @PageObject
@@ -46,7 +46,6 @@ public class LoginPage {
         enterPassword(password);
         clickLogin();
     }
-
 
     public void verifyErrorMessage(){
         String text  = errorMessage.getText();

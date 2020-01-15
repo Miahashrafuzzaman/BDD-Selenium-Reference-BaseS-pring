@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 /**
- * Created by ShiftTeacher on 7/22/2017.
+ * Created by Miah Ashrafuzzaman on 7/22/2017.
  */
 public class HomePageSteps extends  StepBase{
     @Given("^As a not validated user$")

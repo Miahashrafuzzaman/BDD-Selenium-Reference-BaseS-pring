@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BDDSeleniumReferenceBaseSpring.iml" filepath="$PROJECT_DIR$/BDDSeleniumReferenceBaseSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BDDSeleniumReferenceBase.Spring.iml" filepath="$PROJECT_DIR$/BDDSeleniumReferenceBase.Spring.iml" />
     </modules>
   </component>
 </project>
